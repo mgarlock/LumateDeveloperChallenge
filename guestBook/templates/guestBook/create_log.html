@@ -1,3 +1,49 @@
+<html>
+<head>
+<style>
+  body {background-color:lightgrey;}
+  h1   {color:black;}
+  h2   {color:black;}
+  p    {color:darkblue;}
+</style>
+</head>
+<body>
+  <h1>About Matt Garlock:</h1>
+  <h2>Education</h2>
+    <p>I currently attend Missouri S&T and I am pursuing a computer science
+    degree, I will graduate in May 2015.<br>  My GPA is 3.4.</p>
+  <h2>Interests</h2>
+    <p>I enjoy mountain biking and disc golfing, and do so whenever I get
+    the chance.  I also enjoy traveling to different places to go mountain
+    biking and explore the terrain.<br> This year I have been biking in Texas, New
+    Mexico, Colorado more locally I have also biked all over Missori and eastern Kansas.<br>  I am also
+    in Pi Kappa Phi fraternity where I served as treasurer for 2 years and
+    currently serve as the Ability Experience Chair.<br>  The Ability
+    Experience is a philanthropy that benefits people with diabilities.
+  <h2>Work Experience</h2>
+    <p>I have had a couple internships during my college career.<br>  My
+    first internship was with Cargill, I worked with a team of 3 other
+    interns to pilot the agile methodology for a larger IT team and teach
+    them about our findings.<br>  During the internship we developed a
+    dashboard using microsoft's buiness intelligence stack hosted on
+    sharepoint 2013.  The dashboard pulled data from a few different
+    preexisting databases<br> into an OLAP cube then aggregated the data into a
+    few different charts that could be drilled into to find more detailed
+    information about buiness segments or periods of time.<br>  At the end
+    of the internship we gave a series of presentations to the team of full
+    time developers explaining the agile methodology and how it worked for
+    our intern team.<br> The following two semesters and summer I interned
+    with Garmin, first in the Rolla office then at thier headquarters in
+    Kansas City.<br>  At the rolla office I worked on two different REST
+    APIs written in python that exposed information about the tasks and
+    code reviews for several projects in the Avaiation department.<br>  Over
+    the summer I worked on the map drawing team where I wrote a regression
+    testing tool for rendering algorthims.<br> On the map drawing team I also
+    contributed to make various elements of the map fade in or out depending
+    on where the view point was and which objects had a higher
+    priority.</p>
+    <p> 
+  <h2>Guest Login:</h2>
 {% block content %}
 <form action="/" method="post">{% csrf_token %}
   <table>
@@ -6,3 +52,6 @@
   <input type="submit" name="submit" value="Sign Guest Log">
 </form>
 {% endblock %}
+</body>
+</html>
+
