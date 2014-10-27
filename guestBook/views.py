@@ -7,6 +7,9 @@ from django.core.context_processors import csrf
 
 class GuestList(ListView):
   model = GuestLog
+  context_object_name = 'guest_log_list'
+  def get_queryset(self):
+    return GuestLog.objects.order_by('-access_date')
 
 def get_client_ip(request):
   x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
@@ -31,5 +34,5 @@ def create(request):
   args = {}
   args.update(csrf(request))
   args['form'] = form                                      
-  return render_to_response('create_log.html', args)
+  return render_to_response('guestBook/create_log.html', args)
                                                 
